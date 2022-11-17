@@ -24,11 +24,11 @@
 //------ RX -------
 
 #ifndef RX_TTLPORT
-    #define RX_TTLPORT PINB3
+    #error define RX_TTLPORT
 #endif
 
 #ifndef TX_TTLPORT
-    #define TX_TTLPORT PORTB4
+    #error define TX_TTLPORT
 #endif
 
 #define WRITE_1 PORTB |= (1<<TX_TTLPORT)
